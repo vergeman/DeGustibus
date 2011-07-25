@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIST>
+
+  <!-- columbia -->
+  <LOCATION>
+    <ZIP>10027</ZIP>
+    <ADDR>2960 Broadway</ADDR>
+  </LOCATION>
+  
+  <!-- Home -->
+  <LOCATION>
+    <ZIP>11104</ZIP>
+    <ADDR>4102 Queens Blvd</ADDR>
+  </LOCATION>
+  
+  <!-- Mitsui -->
+  <LOCATION>
+    <ZIP>10017</ZIP>
+    <ADDR>200 Park Avenue</ADDR>
+  </LOCATION>
+  
+  <!-- MTV -->
+  <LOCATION>
+    <ZIP>10036</ZIP>
+    <ADDR>1515 Broadway</ADDR>
+  </LOCATION>
+
+<!--batch two -->
+<!--GREENWICH VILLAGE SOHO -->
+  <!--Soho / NYU-->
+  <LOCATION>
+    <ZIP>10012</ZIP>
+    <ADDR>147 Mercer St</ADDR>
+  </LOCATION>
+  <!-- Chambers / Tribeca-->
+  <LOCATION>
+    <ZIP>10013</ZIP>
+    <ADDR>25 Hudson</ADDR>
+  </LOCATION>
+  <!-- W. Village (hudson) -->
+  <LOCATION>
+    <ZIP>10014</ZIP>
+    <ADDR>487 Hudson</ADDR>
+  </LOCATION>
+<!--UNION SQUARE - LOWER EAST SIDE-->
+  <!-- Union Sq. (Strand) -->
+  <LOCATION>
+    <ZIP>10003</ZIP>
+    <ADDR>828 Broadway</ADDR>
+  </LOCATION>
+  <!-- downtown -->
+  <LOCATION>
+    <ZIP>10002</ZIP>
+    <ADDR>828 Broadway</ADDR>
+  </LOCATION>
+  <!-- alpha city -->
+  <LOCATION>
+    <ZIP>10009</ZIP>
+    <ADDR>500 E 11th st</ADDR>
+  </LOCATION>
+<!--UPPER WEST SIDE-->
+  <!-- UWS 100's-->
+  <LOCATION>
+    <ZIP>10025</ZIP>
+    <ADDR>2672 Broadway</ADDR>
+  </LOCATION>
+  <!-- UWS 80's-->
+  <LOCATION>
+    <ZIP>10024</ZIP>
+    <ADDR>2245 Broadway</ADDR>
+  </LOCATION>
+  <!-- UWS  70's -->
+  <LOCATION>
+    <ZIP>10023</ZIP>
+    <ADDR>2090 Broadway</ADDR>
+  </LOCATION>
+<!-- GRAMERCY PARK MURRAY HILL-->
+<!--midtown E 50's-->
+  <LOCATION>
+    <ZIP>10022</ZIP>
+    <ADDR>987 2nd Ave</ADDR>
+  </LOCATION>
+<!--midtown E 40's-->
+  <LOCATION>
+    <ZIP>10017</ZIP>
+    <ADDR>240 E 45th st</ADDR>
+  </LOCATION>
+<!--murray hill-->
+  <LOCATION>
+    <ZIP>10016</ZIP>
+    <ADDR>12 Park Ave</ADDR>
+  </LOCATION>
+<!--E 20's-->
+  <LOCATION>
+    <ZIP>10010</ZIP>
+    <ADDR>209 E 23rd st</ADDR>
+  </LOCATION>
+<!--CHELSEA CLINTON-->
+<!--clinton-->
+  <LOCATION>
+    <ZIP>10036</ZIP>
+    <ADDR>626 11th Ave</ADDR>
+  </LOCATION>
+<!--central park south-->
+  <LOCATION>
+    <ZIP>10020</ZIP>
+    <ADDR>1634 Broadway</ADDR>
+  </LOCATION>
+<!--penn station-->
+  <LOCATION>
+    <ZIP>10018</ZIP>
+    <ADDR>200 W 40th st</ADDR>
+  </LOCATION>
+<!--chelsea-->
+  <LOCATION>
+    <ZIP>10001</ZIP>
+    <ADDR>370 8th Avenue</ADDR>
+  </LOCATION>
+
+<!--UES-->
+<!-- E 80s-->
+  <LOCATION>
+    <ZIP>10028</ZIP>
+    <ADDR>1631 2nd Ave</ADDR>
+  </LOCATION>
+
+<!-- E 70s-->
+  <LOCATION>
+    <ZIP>10021</ZIP>
+    <ADDR>1007 Lexington Ave</ADDR>
+  </LOCATION>
+
+
+</LIST>

@@ -1,0 +1,385 @@
+\hypertarget{classCluster}{
+\section{Cluster Class Reference}
+\label{classCluster}\index{Cluster@{Cluster}}
+}
+
+
+{\ttfamily \#include $<$cluster.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCluster_aee7feb1d599d4c8fda6c3ee83e86ba81}{Cluster} ()
+\item 
+\hyperlink{classCluster_a5de4b997d842d70481a2f5d6a95a9028}{Cluster} (string filename)
+\item 
+void \hyperlink{classCluster_a5ed14940e783acc2e3165a1631f8227d}{Load} (string filename)
+\item 
+int \hyperlink{classCluster_a304851e372265d7437cbb394cbdc9019}{\_\-Read} (string filename)
+\item 
+int \hyperlink{classCluster_aae67862083dc7fd4da97cfbf1dd7f97f}{\_\-Parse} (vector$<$ string $>$ terms)
+\item 
+int \hyperlink{classCluster_a79563a9a84e7743db09496e8527001c1}{\_\-ParseLine} (string line)
+\item 
+int \hyperlink{classCluster_aac2c14c8110c96fac48a8d573632d2e3}{\_\-Weight} ()
+\item 
+int \hyperlink{classCluster_ae5be7facdae33195b618e2c8941b011f}{\_\-Norm} ()
+\item 
+void \hyperlink{classCluster_aed7e02360882a7bf0e710bdaacf92972}{Kmeans} (int q, int iterations)
+\item 
+vector$<$ int $>$ \hyperlink{classCluster_a965381fcbc3fd3de1bd7fac5dbce18a8}{\_\-selectRandomSeeds} (int N)
+\item 
+double \hyperlink{classCluster_a969670efa1f56b84038da737ad585e62}{\_\-distance} (unordered\_\-string\_\-map \&centroid, unordered\_\-string\_\-map \&doc)
+\item 
+unordered\_\-string\_\-map \hyperlink{classCluster_a95315207d37fd73cdfffca386b78d38f}{\_\-centroid} (boost::unordered\_\-set$<$ int $>$ \&cluster\_\-list)
+\item 
+vector$<$ int $>$ \hyperlink{classCluster_ac3f0b7d4f0bf313c9c23df90728a5106}{Rotate} (vector$<$ int $>$ L, vector$<$ int $>$ S, int C, int num\_\-results)
+\item 
+vector$<$ int $>$ \hyperlink{classCluster_a76ea6ab6cd052481dcbd7b0d8ceb0180}{Search} (vector$<$ string $>$ terms)
+\item 
+int \hyperlink{classCluster_a5e088a6dfdd68195d483f910fed056ad}{\_\-calc\_\-Next} (vector$<$ int $>$ L, vector$<$ int $>$ S, int cluster\_\-id, double lambda)
+\item 
+void \hyperlink{classCluster_a51bc8f180218e3c557b5c5f3384bb47b}{set\_\-lambda} (int lambda)
+\item 
+vector$<$ \hyperlink{structid__sim}{id\_\-sim} $>$ \hyperlink{classCluster_a09c17f5cdfcb4fb272ae78f8aeff5b35}{\_\-calc\_\-sim\_\-list} (int doc\_\-id, vector$<$ int $>$ list)
+\item 
+vector$<$ \hyperlink{structid__sim}{id\_\-sim} $>$ \hyperlink{classCluster_a3d867fe0143427ef9b23a1530df04aee}{\_\-calc\_\-sim\_\-cluster} (int doc\_\-id, int cluster\_\-id)
+\item 
+double \hyperlink{classCluster_a896a946d690baf53a822a1481329b03b}{\_\-sum\_\-id\_\-sim\_\-vec} (vector$<$ \hyperlink{structid__sim}{id\_\-sim} $>$ s)
+\item 
+vector$<$ \hyperlink{structid__sim}{id\_\-sim} $>$ \hyperlink{classCluster_ac70926befde63be5cc6da346d6d7006a}{\_\-merge\_\-ranked\_\-centroids} (vector$<$ \hyperlink{structid__sim}{id\_\-sim} $>$ ranked, vector$<$ \hyperlink{structid__sim}{id\_\-sim} $>$ centroid)
+\item 
+vector$<$ \hyperlink{structid__sim}{id\_\-sim} $>$ \hyperlink{classCluster_ad080eedbefc0ca9a3a66dded18226a88}{\_\-sim\_\-centroids} (int doc\_\-i)
+\item 
+void \hyperlink{classCluster_a447f84a585288aec46dfdde042aa6903}{\_\-insert\_\-sorted} (vector$<$ \hyperlink{structid__sim}{id\_\-sim} $>$ \&sim\_\-list, \hyperlink{structid__sim}{id\_\-sim} \&sims)
+\item 
+\hyperlink{structid__sim}{id\_\-sim} \hyperlink{classCluster_ae11667a951be1260088de1ff32a41bcf}{\_\-sim} (int doc\_\-i, int doc\_\-j)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classCluster}{Cluster} class houses term-\/doc, doc-\/doc indices and performs internal K-\/means operations also has accessor functions Search \& Rotate that get called by users. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classCluster_aee7feb1d599d4c8fda6c3ee83e86ba81}{
+\index{Cluster@{Cluster}!Cluster@{Cluster}}
+\index{Cluster@{Cluster}!Cluster@{Cluster}}
+\subsubsection[{Cluster}]{\setlength{\rightskip}{0pt plus 5cm}Cluster::Cluster (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classCluster_aee7feb1d599d4c8fda6c3ee83e86ba81}
+default constructor (not implemented) \hypertarget{classCluster_a5de4b997d842d70481a2f5d6a95a9028}{
+\index{Cluster@{Cluster}!Cluster@{Cluster}}
+\index{Cluster@{Cluster}!Cluster@{Cluster}}
+\subsubsection[{Cluster}]{\setlength{\rightskip}{0pt plus 5cm}Cluster::Cluster (
+\begin{DoxyParamCaption}
+\item[{string}]{ filename}
+\end{DoxyParamCaption}
+)}}
+\label{classCluster_a5de4b997d842d70481a2f5d6a95a9028}
+constructor 
+\begin{DoxyParams}{Parameters}
+\item[{\em filename}]is a string arg representing the final term-\/doc index output by the crawl \end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classCluster_a5e088a6dfdd68195d483f910fed056ad}{
+\index{Cluster@{Cluster}!\_\-calc\_\-Next@{\_\-calc\_\-Next}}
+\index{\_\-calc\_\-Next@{\_\-calc\_\-Next}!Cluster@{Cluster}}
+\subsubsection[{\_\-calc\_\-Next}]{\setlength{\rightskip}{0pt plus 5cm}int Cluster::\_\-calc\_\-Next (
+\begin{DoxyParamCaption}
+\item[{vector$<$ int $>$}]{ L, }
+\item[{vector$<$ int $>$}]{ S, }
+\item[{int}]{ cluster\_\-id, }
+\item[{double}]{ lambda}
+\end{DoxyParamCaption}
+)}}
+\label{classCluster_a5e088a6dfdd68195d483f910fed056ad}
+\_\-calc\_\-Next returns a single item, given the preferences sent by the client. It is called repeatedly in Rotate to generate the desired results 
+\begin{DoxyParams}{Parameters}
+\item[{\em L}]is a vector of doc id's representing items that a client requests for more similar \item[{\em S}]is a vector of doc id's representing already \char`\"{}seen\char`\"{} items, of which dissimilar items are to be calculated from. \item[{\em cluster\_\-id}]is the cluster id to start calcluations from \item[{\em lambda,:}]deprecated, was used in MMR calculations, but was found not to be a good basis for calculation. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+will return 0 if no item was found -\/ this is used to indicate we move to the next cluster and calculate again. otherwise it is the item Id. 
+\end{DoxyReturn}
+\hypertarget{classCluster_a3d867fe0143427ef9b23a1530df04aee}{
+\index{Cluster@{Cluster}!\_\-calc\_\-sim\_\-cluster@{\_\-calc\_\-sim\_\-cluster}}
+\index{\_\-calc\_\-sim\_\-cluster@{\_\-calc\_\-sim\_\-cluster}!Cluster@{Cluster}}
+\subsubsection[{\_\-calc\_\-sim\_\-cluster}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ {\bf id\_\-sim} $>$ Cluster::\_\-calc\_\-sim\_\-cluster (
+\begin{DoxyParamCaption}
+\item[{int}]{ doc\_\-id, }
+\item[{int}]{ cluster\_\-id}
+\end{DoxyParamCaption}
+)}}
+\label{classCluster_a3d867fe0143427ef9b23a1530df04aee}
+\_\-calc\_\-sim\_\-cluster takes an item id, and a cluster\_\-id, and calculates the similarities between all docs in that cluster, returning a vector of struct id\_\-sims with the according values. 
+\begin{DoxyParams}{Parameters}
+\item[{\em doc\_\-id}]is an integer representing the document to be compared \item[{\em cluster\_\-id}]is the interal cluster\_\-id from which all docs are to be compared. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a vector of pairs that house the similarity values 
+\end{DoxyReturn}
+\hypertarget{classCluster_a09c17f5cdfcb4fb272ae78f8aeff5b35}{
+\index{Cluster@{Cluster}!\_\-calc\_\-sim\_\-list@{\_\-calc\_\-sim\_\-list}}
+\index{\_\-calc\_\-sim\_\-list@{\_\-calc\_\-sim\_\-list}!Cluster@{Cluster}}
+\subsubsection[{\_\-calc\_\-sim\_\-list}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ {\bf id\_\-sim} $>$ Cluster::\_\-calc\_\-sim\_\-list (
+\begin{DoxyParamCaption}
+\item[{int}]{ doc\_\-id, }
+\item[{vector$<$ int $>$}]{ list}
+\end{DoxyParamCaption}
+)}}
+\label{classCluster_a09c17f5cdfcb4fb272ae78f8aeff5b35}
+\_\-calc\_\-sim\_\-list takes a given item, and a list of other items, and calculates the similarities between them returning a vector of struct id\_\-sim's. 
+\begin{DoxyParams}{Parameters}
+\item[{\em doc\_\-id}]is an integer representing the document to be compared \item[{\em list}]is a vector of other docs (usually representing S, or L) of which to calculate similarities \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a vector of pairs that house the similarity values 
+\end{DoxyReturn}
+\hypertarget{classCluster_a95315207d37fd73cdfffca386b78d38f}{
+\index{Cluster@{Cluster}!\_\-centroid@{\_\-centroid}}
+\index{\_\-centroid@{\_\-centroid}!Cluster@{Cluster}}
+\subsubsection[{\_\-centroid}]{\setlength{\rightskip}{0pt plus 5cm}boost::unordered\_\-map$<$ string, double $>$ Cluster::\_\-centroid (
+\begin{DoxyParamCaption}
+\item[{boost::unordered\_\-set$<$ int $>$ \&}]{ cluster\_\-list}
+\end{DoxyParamCaption}
+)}}
+\label{classCluster_a95315207d37fd73cdfffca386b78d38f}
+\_\-centroid: calculates the average of the documents, creates the centroid 
+\begin{DoxyParams}{Parameters}
+\item[{\em cluster\_\-list}]represents a list of documents in a cluster \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+unordered\_\-string\_\-map represents centroid. 
+\end{DoxyReturn}
+\hypertarget{classCluster_a969670efa1f56b84038da737ad585e62}{
+\index{Cluster@{Cluster}!\_\-distance@{\_\-distance}}
+\index{\_\-distance@{\_\-distance}!Cluster@{Cluster}}
+\subsubsection[{\_\-distance}]{\setlength{\rightskip}{0pt plus 5cm}double Cluster::\_\-distance (
+\begin{DoxyParamCaption}
+\item[{unordered\_\-string\_\-map \&}]{ centroid, }
+\item[{unordered\_\-string\_\-map \&}]{ doc}
+\end{DoxyParamCaption}
+)}}
+\label{classCluster_a969670efa1f56b84038da737ad585e62}
+\_\-distance: internal K-\/means function that measures distance from centroid to item 
+\begin{DoxyParams}{Parameters}
+\item[{\em centroid,:}]reference to centroid hash map \item[{\em doc,:}]reference to document id \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+distance computation 
+\end{DoxyReturn}
+\hypertarget{classCluster_a447f84a585288aec46dfdde042aa6903}{
+\index{Cluster@{Cluster}!\_\-insert\_\-sorted@{\_\-insert\_\-sorted}}
+\index{\_\-insert\_\-sorted@{\_\-insert\_\-sorted}!Cluster@{Cluster}}
+\subsubsection[{\_\-insert\_\-sorted}]{\setlength{\rightskip}{0pt plus 5cm}void Cluster::\_\-insert\_\-sorted (
+\begin{DoxyParamCaption}
+\item[{vector$<$ {\bf id\_\-sim} $>$ \&}]{ sim\_\-list, }
+\item[{{\bf id\_\-sim} \&}]{ sims}
+\end{DoxyParamCaption}
+)}}
+\label{classCluster_a447f84a585288aec46dfdde042aa6903}
+insert\_\-sorted is a utility function that takes a vector of struct pairs, and inserts a pair into that list, while maintaing sorted order of that list (based on similarity value) 
+\begin{DoxyParams}{Parameters}
+\item[{\em sim\_\-list}]is a reference to the list to be inserted into \item[{\em sims}]is a reference to the pair being inserted. \end{DoxyParams}
+\hypertarget{classCluster_ac70926befde63be5cc6da346d6d7006a}{
+\index{Cluster@{Cluster}!\_\-merge\_\-ranked\_\-centroids@{\_\-merge\_\-ranked\_\-centroids}}
+\index{\_\-merge\_\-ranked\_\-centroids@{\_\-merge\_\-ranked\_\-centroids}!Cluster@{Cluster}}
+\subsubsection[{\_\-merge\_\-ranked\_\-centroids}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ {\bf id\_\-sim} $>$ Cluster::\_\-merge\_\-ranked\_\-centroids (
+\begin{DoxyParamCaption}
+\item[{vector$<$ {\bf id\_\-sim} $>$}]{ ranked, }
+\item[{vector$<$ {\bf id\_\-sim} $>$}]{ centroid}
+\end{DoxyParamCaption}
+)}}
+\label{classCluster_ac70926befde63be5cc6da346d6d7006a}
+\_\-merge\_\-ranked\_\-centroids: take a rank-\/similarity ordered list of centroid, and a given centroid add the scores up for each centroid. This way we have a running sum of the most similar centroid for an overall list of \char`\"{}liked items\char`\"{} 
+\begin{DoxyParams}{Parameters}
+\item[{\em ranked}]is a vector of struct \hyperlink{structid__sim}{id\_\-sim} pairs that are in ranked order \item[{\em centroid,:}]current centroid \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+vector of struct \hyperlink{structid__sim}{id\_\-sim} 
+\end{DoxyReturn}
+\hypertarget{classCluster_ae5be7facdae33195b618e2c8941b011f}{
+\index{Cluster@{Cluster}!\_\-Norm@{\_\-Norm}}
+\index{\_\-Norm@{\_\-Norm}!Cluster@{Cluster}}
+\subsubsection[{\_\-Norm}]{\setlength{\rightskip}{0pt plus 5cm}int Cluster::\_\-Norm (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classCluster_ae5be7facdae33195b618e2c8941b011f}
+\_\-Norm normalizes the weights so that the values are representative of unit vectors \hypertarget{classCluster_aae67862083dc7fd4da97cfbf1dd7f97f}{
+\index{Cluster@{Cluster}!\_\-Parse@{\_\-Parse}}
+\index{\_\-Parse@{\_\-Parse}!Cluster@{Cluster}}
+\subsubsection[{\_\-Parse}]{\setlength{\rightskip}{0pt plus 5cm}int Cluster::\_\-Parse (
+\begin{DoxyParamCaption}
+\item[{vector$<$ string $>$}]{ terms}
+\end{DoxyParamCaption}
+)}}
+\label{classCluster_aae67862083dc7fd4da97cfbf1dd7f97f}
+\_\-Parse: parses a vector of terms 
+\begin{DoxyParams}{Parameters}
+\item[{\em terms}]is a vector of terms \end{DoxyParams}
+\hypertarget{classCluster_a79563a9a84e7743db09496e8527001c1}{
+\index{Cluster@{Cluster}!\_\-ParseLine@{\_\-ParseLine}}
+\index{\_\-ParseLine@{\_\-ParseLine}!Cluster@{Cluster}}
+\subsubsection[{\_\-ParseLine}]{\setlength{\rightskip}{0pt plus 5cm}int Cluster::\_\-ParseLine (
+\begin{DoxyParamCaption}
+\item[{string}]{ line}
+\end{DoxyParamCaption}
+)}}
+\label{classCluster_a79563a9a84e7743db09496e8527001c1}
+\_\-ParseLine parses each line 
+\begin{DoxyParams}{Parameters}
+\item[{\em line}]is a string that represents a line of text \end{DoxyParams}
+\hypertarget{classCluster_a304851e372265d7437cbb394cbdc9019}{
+\index{Cluster@{Cluster}!\_\-Read@{\_\-Read}}
+\index{\_\-Read@{\_\-Read}!Cluster@{Cluster}}
+\subsubsection[{\_\-Read}]{\setlength{\rightskip}{0pt plus 5cm}int Cluster::\_\-Read (
+\begin{DoxyParamCaption}
+\item[{string}]{ filename}
+\end{DoxyParamCaption}
+)}}
+\label{classCluster_a304851e372265d7437cbb394cbdc9019}
+\_\-Read: internal index building function, opens and reads the file representing term-\/doc index 
+\begin{DoxyParams}{Parameters}
+\item[{\em filename}]is the term-\/doc index \end{DoxyParams}
+\hypertarget{classCluster_a965381fcbc3fd3de1bd7fac5dbce18a8}{
+\index{Cluster@{Cluster}!\_\-selectRandomSeeds@{\_\-selectRandomSeeds}}
+\index{\_\-selectRandomSeeds@{\_\-selectRandomSeeds}!Cluster@{Cluster}}
+\subsubsection[{\_\-selectRandomSeeds}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ int $>$ Cluster::\_\-selectRandomSeeds (
+\begin{DoxyParamCaption}
+\item[{int}]{ N}
+\end{DoxyParamCaption}
+)}}
+\label{classCluster_a965381fcbc3fd3de1bd7fac5dbce18a8}
+\_\-selectRandomSeeds returns a vector of item id's representing randomly chosen seeds. 
+\begin{DoxyParams}{Parameters}
+\item[{\em N}]is an integer of how many seeds to select. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+vector of item ids that are the seeds 
+\end{DoxyReturn}
+\hypertarget{classCluster_ae11667a951be1260088de1ff32a41bcf}{
+\index{Cluster@{Cluster}!\_\-sim@{\_\-sim}}
+\index{\_\-sim@{\_\-sim}!Cluster@{Cluster}}
+\subsubsection[{\_\-sim}]{\setlength{\rightskip}{0pt plus 5cm}{\bf id\_\-sim} Cluster::\_\-sim (
+\begin{DoxyParamCaption}
+\item[{int}]{ doc\_\-i, }
+\item[{int}]{ doc\_\-j}
+\end{DoxyParamCaption}
+)}}
+\label{classCluster_ae11667a951be1260088de1ff32a41bcf}
+\_\-sim returns the similarity calculation between two documents. 
+\begin{DoxyParams}{Parameters}
+\item[{\em doc\_\-i}]item id \item[{\em doc\_\-j}]item id2 \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{structid__sim}{id\_\-sim} is a pair that reperesents doc J's id value 
+\end{DoxyReturn}
+\hypertarget{classCluster_ad080eedbefc0ca9a3a66dded18226a88}{
+\index{Cluster@{Cluster}!\_\-sim\_\-centroids@{\_\-sim\_\-centroids}}
+\index{\_\-sim\_\-centroids@{\_\-sim\_\-centroids}!Cluster@{Cluster}}
+\subsubsection[{\_\-sim\_\-centroids}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ {\bf id\_\-sim} $>$ Cluster::\_\-sim\_\-centroids (
+\begin{DoxyParamCaption}
+\item[{int}]{ doc\_\-i}
+\end{DoxyParamCaption}
+)}}
+\label{classCluster_ad080eedbefc0ca9a3a66dded18226a88}
+\_\-sim\_\-centroids, given a document, gives ranked list (struct \hyperlink{structid__sim}{id\_\-sim}) of most similar centroids 
+\begin{DoxyParams}{Parameters}
+\item[{\em doc\_\-i}]an item id integer \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+vector of centroids, rank similarity ordered 
+\end{DoxyReturn}
+\hypertarget{classCluster_a896a946d690baf53a822a1481329b03b}{
+\index{Cluster@{Cluster}!\_\-sum\_\-id\_\-sim\_\-vec@{\_\-sum\_\-id\_\-sim\_\-vec}}
+\index{\_\-sum\_\-id\_\-sim\_\-vec@{\_\-sum\_\-id\_\-sim\_\-vec}!Cluster@{Cluster}}
+\subsubsection[{\_\-sum\_\-id\_\-sim\_\-vec}]{\setlength{\rightskip}{0pt plus 5cm}double Cluster::\_\-sum\_\-id\_\-sim\_\-vec (
+\begin{DoxyParamCaption}
+\item[{vector$<$ {\bf id\_\-sim} $>$}]{ s}
+\end{DoxyParamCaption}
+)}}
+\label{classCluster_a896a946d690baf53a822a1481329b03b}
+\_\-sum\_\-id\_\-sim\_\-vec takes a vector of similarity calculations and sums them for an aggregate score. this is used to calculate the relative ranking of multiple documetns against a list. (often having called \_\-calc\_\-sim\_\-list / \_\-calc\_\-sim\_\-cluster beforehand, and passing the results to this function. 
+\begin{DoxyParams}{Parameters}
+\item[{\em s}]is a vector of struct \hyperlink{structid__sim}{id\_\-sim} pairs. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an aggregate score 
+\end{DoxyReturn}
+\hypertarget{classCluster_aac2c14c8110c96fac48a8d573632d2e3}{
+\index{Cluster@{Cluster}!\_\-Weight@{\_\-Weight}}
+\index{\_\-Weight@{\_\-Weight}!Cluster@{Cluster}}
+\subsubsection[{\_\-Weight}]{\setlength{\rightskip}{0pt plus 5cm}int Cluster::\_\-Weight (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classCluster_aac2c14c8110c96fac48a8d573632d2e3}
+\_\-Weight translates the term frequency values in the index into a tf$\ast$idf weights and repopulates the matrix \hypertarget{classCluster_aed7e02360882a7bf0e710bdaacf92972}{
+\index{Cluster@{Cluster}!Kmeans@{Kmeans}}
+\index{Kmeans@{Kmeans}!Cluster@{Cluster}}
+\subsubsection[{Kmeans}]{\setlength{\rightskip}{0pt plus 5cm}void Cluster::Kmeans (
+\begin{DoxyParamCaption}
+\item[{int}]{ q, }
+\item[{int}]{ iterations}
+\end{DoxyParamCaption}
+)}}
+\label{classCluster_aed7e02360882a7bf0e710bdaacf92972}
+Kmeans: an implementation of Kmeans. 
+\begin{DoxyParams}{Parameters}
+\item[{\em q}]deprecated -\/ automatically calculates sqrt N items as seeds \item[{\em iterations,:}]number of clustering iterations to perform \end{DoxyParams}
+\hypertarget{classCluster_a5ed14940e783acc2e3165a1631f8227d}{
+\index{Cluster@{Cluster}!Load@{Load}}
+\index{Load@{Load}!Cluster@{Cluster}}
+\subsubsection[{Load}]{\setlength{\rightskip}{0pt plus 5cm}void Cluster::Load (
+\begin{DoxyParamCaption}
+\item[{string}]{ filename}
+\end{DoxyParamCaption}
+)}}
+\label{classCluster_a5ed14940e783acc2e3165a1631f8227d}
+Load: mimics constructor -\/ called by thrift 
+\begin{DoxyParams}{Parameters}
+\item[{\em filename}]is a string arg representing the final term-\/doc index output by the crawl \end{DoxyParams}
+\hypertarget{classCluster_ac3f0b7d4f0bf313c9c23df90728a5106}{
+\index{Cluster@{Cluster}!Rotate@{Rotate}}
+\index{Rotate@{Rotate}!Cluster@{Cluster}}
+\subsubsection[{Rotate}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ int $>$ Cluster::Rotate (
+\begin{DoxyParamCaption}
+\item[{vector$<$ int $>$}]{ L, }
+\item[{vector$<$ int $>$}]{ S, }
+\item[{int}]{ C, }
+\item[{int}]{ num\_\-results}
+\end{DoxyParamCaption}
+)}}
+\label{classCluster_ac3f0b7d4f0bf313c9c23df90728a5106}
+Rotate: is the accessor function called by the client, and returns a vector of item id's that represent suggestions, calculated according to the inputs. 
+\begin{DoxyParams}{Parameters}
+\item[{\em L}]is a vector of doc id's representing items that a client requests for more similar \item[{\em S}]is a vector of doc id's representing already \char`\"{}seen\char`\"{} items, of which dissimilar items are to be calculated from. \item[{\em C}]is the cluster id to start calcluations from \item[{\em num\_\-results}]represents the number of results to return \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+list of item ids 
+\end{DoxyReturn}
+\hypertarget{classCluster_a76ea6ab6cd052481dcbd7b0d8ceb0180}{
+\index{Cluster@{Cluster}!Search@{Search}}
+\index{Search@{Search}!Cluster@{Cluster}}
+\subsubsection[{Search}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ int $>$ Cluster::Search (
+\begin{DoxyParamCaption}
+\item[{vector$<$ string $>$}]{ terms}
+\end{DoxyParamCaption}
+)}}
+\label{classCluster_a76ea6ab6cd052481dcbd7b0d8ceb0180}
+Search: an accessor function called by the client to return a vector of document (item) id's that are the search results. 
+\begin{DoxyParams}{Parameters}
+\item[{\em terms}]accords to a string of search terms. \end{DoxyParams}
+\hypertarget{classCluster_a51bc8f180218e3c557b5c5f3384bb47b}{
+\index{Cluster@{Cluster}!set\_\-lambda@{set\_\-lambda}}
+\index{set\_\-lambda@{set\_\-lambda}!Cluster@{Cluster}}
+\subsubsection[{set\_\-lambda}]{\setlength{\rightskip}{0pt plus 5cm}void Cluster::set\_\-lambda (
+\begin{DoxyParamCaption}
+\item[{int}]{ lambda}
+\end{DoxyParamCaption}
+)}}
+\label{classCluster_a51bc8f180218e3c557b5c5f3384bb47b}
+set\_\-lambda is a setter method to set lambda value. Not used in current implementation 
+\begin{DoxyParams}{Parameters}
+\item[{\em lambda}]is an integer \end{DoxyParams}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+cluster.h\item 
+cluster.cpp\end{DoxyCompactItemize}

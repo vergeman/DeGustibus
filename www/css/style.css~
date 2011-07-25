@@ -1,0 +1,300 @@
+body {
+    background: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    line-height: 100%;
+    color: #eee;
+}
+
+#page {
+    width: 1036px;
+    //background: #FFFFFF;
+    //color: #000;
+
+    margin-left: auto ;
+    margin-right: auto ;
+
+    border-style: solid;
+    border-width: 2px;
+    border-color: #eee;
+
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+
+
+}
+
+#header, #search, #cluster, #map_canvas, #cluster_caption, #review, #search_results, #footer {
+    /*size*/
+    width: 1024px;
+
+    /*remove borders on production */
+/*
+    border-style: solid;
+    border-width: 2px;
+    border-color: #eee;
+*/
+    /*position information*/
+    margin-left: auto ;
+    margin-right: auto ;
+    
+    text-align: left;    
+    padding: 5px;
+
+}
+
+
+
+
+#cluster {
+    height: 370px;
+
+}
+
+#cluster_slider {    
+    float: left;
+    width: 910px;
+    height: 380px;
+
+
+/*
+    border-style: solid;
+    border-width: 2px;
+    border-color: #eee;
+*/
+}
+/*
+#cluster_item {
+    height: 350px;
+
+    border-style: solid;
+    border-width: 2px;
+    border-color: #eee;
+}
+*/
+/*generated*/
+.item {
+    position: relative;
+    float: left;
+    top: 5px;
+    height: 370px;
+    width: 295px;
+
+    overflow: auto;
+    align-text: center;
+
+
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    background: #FFFFFF;
+    color: #000;
+
+/*
+    border-style: solid;
+    border-width: 1px;
+    border-color: #eee;
+*/
+}
+
+.item_space {
+    position: relative;
+    float: left;
+    width: 10px;
+    height: 370px;
+}
+
+.title {
+    height: 40px;
+    margin: 10px;
+/*
+    border-style: solid;
+    border-width: 1px;
+    border-color: #eee;
+*/
+}
+
+.item_info {
+/*
+    position: absolute;
+    bottom: 0px;
+*/
+    margin: 10px;
+    font-size: 80%;
+/*
+    border-style: solid;
+    border-width: 1px;
+    border-color: #eee;
+*/
+}
+
+.restaurant_info {
+    position: absolute;
+    top: 170px;
+    overflow: auto;
+    font-size: 90%;
+/*
+    border-style: solid;
+    border-width: 1px;
+    border-color: #eee;
+*/
+}
+
+
+
+.save {
+    //height: 10px;
+    font-size: 70%;
+    position: absolute;
+    bottom: 5px;
+    right: 15px;
+/*
+    border-style: solid;
+    border-width: 1px;
+    border-color: #eee;
+*/
+}
+
+
+.similar {
+    
+    font-size: 70%;
+    position: absolute;
+    bottom: 5px;
+    right: 80px;
+
+/*
+    border-style: solid;
+    border-width: 1px;
+    border-color: #eee;
+*/
+}
+
+
+#cluster_button_area {
+    float: left;
+    width: 30px;
+    height: 370px;
+/*
+    border-style: solid;
+    border-width: 2px;
+    border-color: #eee;
+*/
+}
+
+
+#cluster_button_next {
+    position:absolute;
+    top: 380px;
+    margin: 25px;
+    cursor: pointer;
+
+    border-color: transparent transparent transparent white;
+    border-style: solid;
+    border-width: 75px 75px 75px 75px;
+    height: 0px;
+    width: 0px;
+
+/*
+    border-style: solid;
+    border-width: 2px;
+    border-color: #eee;
+*/
+}
+
+
+
+#cluster_similar {
+
+    margin: 10px;
+    cursor: pointer;
+
+    
+/*
+    border-style: solid;
+    border-width: 2px;
+    border-color: #eee;
+*/
+}
+
+.similar_table {
+
+
+}
+
+#cluster_caption {
+/*
+    border-style: solid;
+    border-width: 2px;
+    border-color: #eee;
+*/
+
+    //background: #FFFFFF;
+    //color: #000;
+
+}
+
+.caption_table {
+    font-size: 105%;
+    
+    border-style: none;
+    border-width: 2px;
+    border-color: #eee;
+    cursor: pointer;
+}
+
+.similar_table {
+   font-size: 100%;
+
+   border-style: none;
+   border-width: 2px;
+   border-color: #eee;
+}
+
+#search_results {
+    height: 300px;
+    width: 1016px;
+    overflow: auto;
+    background: #FFFFFF;
+    color: #000;
+    margin: 5px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    font-size:90%;
+
+/*
+    border-style: solid;
+    border-width: 2px;
+    border-color: #eee;
+*/
+}
+
+
+#map_canvas {
+    height: 200px;
+
+    border-style: solid;
+    border-width: 2px;
+    border-color: #eee;
+}
+
+
+#search {
+    height: 50px;
+}
+
+#search_form_text {
+//    font-size: 100%;
+    height:30px;
+
+}
+#search_button {
+    margin: 10px;
+    font-size: 90%;
+    position: relative;
+    
+}
+
+#footer {
+
+}
+

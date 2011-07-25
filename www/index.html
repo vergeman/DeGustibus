@@ -1,0 +1,174 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- header start -->  
+  <head>
+
+    <title>De Gustibus</title>
+
+    <meta http-equiv="Content-Type"
+	  content="text/html; charset=utf-8"/>
+    
+    <!--CSS Stylesheet -->
+    <link href="./css/style.css" rel="stylesheet" type-"text/css" />
+    <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+
+    <!--JQUERY scripts -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+    
+    <!--google analytics why not-->
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-22874787-1']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+
+    <!-- Cluster scripts-->
+    <script src="./js/cluster.js" type="text/javascript"></script>
+
+    <!-- Map scripts-->
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+
+    <script src="./js/map.js" type="text/javascript"></script>
+
+
+
+
+  </head>
+<!-- header end -->  
+
+
+<!-- body start -->  
+  <body>
+
+    <div id = "page">
+
+    <div id = "header">
+      <h1>&nbsp;De Gustibus</h1>
+    </div>
+
+   <div id = "map_canvas">
+   </div>
+   
+   <div id = "cluster_similar">
+   <h3> Searching for Similar Items:</h3>
+     <table class= "similar_table">
+     </table>
+   </div>
+      
+
+    
+    <div id = "cluster">
+
+      <!--level -->
+      <div id = "cluster_slider">
+
+	<!--level -->
+	<div id = "cluster_item">
+
+	</div>
+
+      </div>
+
+      <div id = "cluster_button_area">
+	
+
+	<div id = "cluster_button_next">
+	  <!--
+	     <p> next </p>
+<button id = "button_next">next</button>	  
+
+	  
+   -->
+	</div>
+
+      </div>
+
+
+
+            
+
+    </div>
+    <!--end cluster -->
+
+    <div id = "cluster_caption">
+      <h3>Saved Items</h3>
+
+      <table class = "caption_table" cellspacing="15">
+	<thead>
+
+	    <th>Restaurant</th>
+	    <th>Dish</th>
+
+
+      </table>
+
+    </div>
+
+
+ 
+
+
+
+    <div id = "search">
+      <form id = "search_form" method="" action="">
+	<input id="search_form_text" value = "" type = "text" size="100"/>
+	<input type = "submit" id="search_button" value="Search" />
+      </form>
+      
+
+    </div>
+
+
+    <div id ="search_results">
+      <h3>Search Results</h3>
+      <table class="search_results_table" cellspacing="15">
+	<thead>
+	  <tr>
+	    <th>Dish</th>
+	    <th>Description</th>
+	    <th>Price</th>
+	    <th>Restaurant</th>
+	    <th>Cuisine</th>
+	  </tr>
+	</thead>
+
+	<tbody>
+	  
+	  <!-- table data here -->
+
+
+
+	</tbody>
+
+
+      </table>
+    </div>
+
+<!--
+    <div id = "review">
+      <p> review </p>
+    </div>
+  -->  
+
+    <div id = "footer">
+      <p> Alan Verga, akv2001.  "De gustibus" is a final project for Columbia University's CS6998: Search Engine Technology, Prof. Radev </p>
+    </div>
+    
+
+    
+
+</div>
+
+  </body> 
+<!-- body end -->
+
+</html>
